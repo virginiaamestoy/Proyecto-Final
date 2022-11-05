@@ -1,7 +1,6 @@
 @import 'vars';
 #header {
     background-color: $bgheaderfoter;
-    /* padding: 50px; */
     text-align: center ;
     .header_logo{  
         img{
@@ -34,7 +33,11 @@
 .MenuPrincipal  {
     background-color: rgb(247, 247, 243);
     text-align: center;
-    height: 1000px;
+    position: relative;
+    height: auto;
+    width: auto;
+    align-items: center;
+    justify-content: center;
     background-image: url('../img/logo.JPG');
     background-repeat: no-repeat;
     background-position: center;
@@ -67,12 +70,12 @@
         margin: auto;
         iframe{
             width: 100%;
-            height: 450px;
+            height: 250px;
         }    
     }
     @media (min-width: $vistaDesktop) {
         iframe{
-            max-width: 600px;
+            max-width: 300px;
         }    
     }         
 }
@@ -86,12 +89,24 @@
             border: transparent;
             margin: auto;
             transition: all 1s; 
+            a{
+                background-color:$bgbutton;
+                border: $bgbutton;       
+            }
             &:hover{
                 transform: scale(1);
                 background-color: $bgdivmain; 
             }
         }
     }
+}
+.circular{
+    border-radius: 50%;
+}
+.colorTexto {
+    
+    color: $bgtextoborde;
+    
 }
 #section { 
     .section_productos{
